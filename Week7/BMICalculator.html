@@ -1,0 +1,44 @@
+<html>
+<html lang = <"en"> 
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compataible" content "IE=edge" />
+        <link rel="StyleSheet" href="./BMI.css"/> 
+    </head> 
+
+
+    <header> 
+        <div class="topnav">
+            <a href="FitnessTracker.html">Home</a>
+            <a class="active" href="BMICalculator.html">BMI Calculator</a>    
+            <a href="Log">Log</a>
+            <a href="ProgressPic">Progress Pictures</a>
+        </div>
+    </header>
+
+
+    <div id="BMICalculator">
+        <label for="height">Please Enter Height in Meters:</label>
+        <input type="number" id="height">
+         <label for="Weight">Please Enter Your Weight in KG:</label>
+          <input type="number" id="Weight">
+        
+         <label for="BMI">Your BMI is:</label>
+         <input type="BMI">
+</div>
+
+<script>
+    new Vue({
+        el:'#app',
+        data : {
+                height : '',
+                weight : ''
+         },
+        computed: {
+                result: function(){
+                    return weight/ (height * height);
+                }
+            }
+    });
+</script>
