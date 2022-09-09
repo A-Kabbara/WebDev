@@ -1,0 +1,97 @@
+<html>
+<html lang = <"en"> 
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compataible" content "IE=edge" />
+        <script src="https://unpkg.com/vue@2.4.4/dist/vue.js"></script>
+        <link rel="StyleSheet" href="./task2.css"/> 
+    </head> 
+
+<title>
+    Fitness Tracker
+</title>
+
+
+<header> 
+    <div class="topnav">
+        <a class="active" href="FitnessTracker.html">Home</a>
+        <a href="#BMICalculator.html">BMI Calculator</a>    
+        <a href="#Log">Log</a>
+        <a href="#ProgressPic">Progress Pictures</a>
+    </div>
+</header>
+
+
+<div>
+    <h2>Welcome!</h2>
+</div>
+
+    <p1>
+        Did you train today?
+    </p1>
+  
+<div id = "Temp"> 
+    <p3>
+         <a href="https://sync.deakin.edu.au/home"> DeakinSync Home!</a>
+    </p3>
+        <button type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and Time.</button>
+        <p id="demo">
+</div>
+  
+
+<div id = "MuscleImage">
+    <img src="DrawingMuscles.JPG" alt="DrawingMuscles" width="400" height="400">
+    <p2>*Insert Inspirational API Quote Here*</p2>
+</div>
+
+
+<body>
+
+
+ <div id = "app">
+        <p>User Name:</p>
+        <input 
+        v-model="name"      
+        type = "text"
+        placeholder="Please Enter Your Username" 
+        />
+        <p>Password:</p>
+        <input type="password" placeholder="Please Enter Your Password" /> 
+    </div>
+</body>
+
+<div id = "TickBox">
+    <input type = "checkbox" id="checkbox" v-models="checked" />
+    <label for ="checkbox">{{ checked }}</label>
+</div>
+
+<script>    
+    var app = new Vue({
+            el: '#app',
+            data: {
+                message: "Hello Vue!",
+                name: 'Adam',
+            },
+        });
+</script>
+
+
+<script>    
+    var TickBox = new Vue({
+            el: '#TickBox',
+            data: {
+                message: "Hello Vue!",
+                checked: "Tick if yes",
+            
+            },
+        });
+</script>
+
+</html>
+
+
+
+
