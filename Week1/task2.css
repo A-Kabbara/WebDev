@@ -1,0 +1,25 @@
+h1 {
+    color: red;
+    text-align: center;
+    background-color: purple;
+    border 5px solid green;
+}
+
+p1{
+    color: green;
+    position: relative;
+    right: 21%;
+    border-style: dashed;
+}
+
+body{
+    text-align: center;
+}
+
+html{
+    background-color: aqua;
+}
+
+table,tr,td{
+    border: 1px solid;
+}
