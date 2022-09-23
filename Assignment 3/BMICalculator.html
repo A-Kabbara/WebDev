@@ -1,0 +1,85 @@
+<html>
+<html lang = <"en"> 
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compataible" content "IE=edge" />
+        <script src="https://unpkg.com/vue@2.4.4/dist/vue.js"></script>
+        <link rel="StyleSheet" href="./BMI.css"/> 
+    </head> 
+<!-- Head Again inclduing Mobiel Scaling + UTF 8, Style Sheet Refrence + Java Script-->
+
+
+    <header> 
+        <div class="topnav">
+            <a href="FitnessTracker.html">Home</a>
+            <a class="active" href="BMICalculator.html">BMI Calculator</a>    
+            <a href="suprise.html"> Suprise </a>
+            <a href="contact.html">Contat Page</a>
+        </div>
+    </header>
+<!-- Header including Naviagation bar-->
+ 
+<h2>
+    BMI Calculator
+</h2>
+
+
+ <div id="BMICalculator"> 
+        <br>
+        <label for="height">Please Enter Height in CM: </label>
+        <input type="number"  style = "height:50px; width:150px; font-size:30px;" placeholder="Height"   v-model="height"/>
+       <!-- type="number" id="height" --> 
+         <label for="weight">Please Enter Your Weight in KG: </label>
+        <input type="number"  style = "height:50px; width:150px; font-size:30px;" placeholder="Weight" v-model="weight"/>
+        <!-- type="number" id="weight" -->
+        <br>    
+        <br>
+        <label for="BMI">Your BMI is: {{ BmiCalcFunc }}</label>
+  <!-- BMi calc div including the user to input his height and weight to pass the parameters to the Vue Function-->
+ </div> 
+ 
+
+ <p1>
+    <div id="ComponentsWithVue">
+        <br>
+        <br>
+        <component1></component1>
+        <component2></component2>
+        {{ text }}
+    </div>
+    <script src= "./project.js"></script>
+</p1>
+
+<!-- Use of Vue Componenets to print out information and text-->
+
+<script>    
+    var BMICalculator = new Vue ({
+         el:'#BMICalculator',
+         data: {
+                 height: null,
+                 weight: null,
+          },
+         computed: {
+                 BmiCalcFunc: function() {
+                     var height = parseInt(this.height) / 100 ;
+                     var weight = parseInt(this.weight);
+                     var bmi = weight / (height * height);
+                     if (bmi <25 ) {
+                        return bmi.toFixed(2) +  ": Your BMI is Low ";
+                     }
+                     else if (bmi>25 && bmi<30){
+                        return bmi.toFixed(2) + ": Your BMI is Average";
+                     }
+                     else if(bmi >= 30){
+                        return bmi.toFixed(2) + ": Your BMI is High";
+                     }
+                 }
+         }
+     }) 
+ </script>
+
+<!-- BMI calculator Vue function, calculates users BMI via height and weight parameters-->
+<!-- This vue function also uses if and else statments to return value as well as ranges-->
+
+

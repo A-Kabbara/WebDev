@@ -1,0 +1,72 @@
+<html>
+<html lang = <"en"> 
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compataible" content "IE=edge" />
+        <script src="https://unpkg.com/vue@2.4.4/dist/vue.js"></script>
+        <link rel="StyleSheet" href="./suprise.css"/> 
+    </head> 
+<!-- Head again contains device width scaling + Language + JS and CSS Refrence-->
+
+    <header> 
+        <div class="topnav">
+            <a href="FitnessTracker.html">Home</a>
+            <a href="BMICalculator.html">BMI Calculator</a>    
+            <a class="active" href="suprise.html">Suprise </a>
+            <a href="contact.html">Contat Page</a>
+        </div>
+    </header>
+<!-- Na bar Stored in heading-->
+
+<h1>
+    Welcome to the Suprise Section!
+</h1>
+<!-- Heading -->
+
+ 
+<script>
+    import FancyButton from './FancyButton.vue'
+    import AwesomeIcon from './AwesomeIcon.vue'
+      
+    export default {
+      components: { FancyButton, AwesomeIcon }
+    }
+</script>
+<!-- Fancy Button Script-->
+
+
+<template>
+    <FancyButton>
+      Click me
+    </FancyButton>
+</template> 
+
+<!-- Fancy Button-->
+
+ 
+ <div id="Creatine">
+    <button style = "color:cyan; 
+    height: 220px; 
+    width: 300px; 
+    font-size: 58px;    
+    color: #fff;
+    background: linear-gradient(215deg, blue 15%, red);
+    border: none;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer; " 
+     v-on:click="show =! show">
+    Click me for a suprise! 
+    </button>
+    
+    <transition name=" bounce">
+      <p v-if="show">Did You Take Your Creatine Today?</p>
+    </transition>
+    <script src= "./project.js"></script>
+  </div>
+  
+  <!-- This Entire "Creatine" division is my colorful button which when you click it it has text appearing that bounces in using vue transitions-->
+ 
+    

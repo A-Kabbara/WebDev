@@ -1,0 +1,120 @@
+h1 {
+    color:red;
+    text-align: center;
+    background-color: purple;
+    border:5px solid green;
+}
+
+
+h2 {
+    text-align: left;
+    font-size: 50px;
+}
+/* Both headers, setting color, background color, borders alligning text */
+p2 {
+    color: rgb(2, 127, 249);
+    position: absolute;
+    font-size: 35px;
+    top: 70%;
+    left:76%;
+
+}
+
+/* Shifting P2 to the right side of the screen by changing position to absoulute and using top and left*/
+
+p3 {
+    padding-bottom: 30px;
+    font-size: 30px; 
+}
+
+
+img{
+    display: block;
+    position:absolute;
+    top: 80px;
+    right:10px;
+    margin-left: auto;
+    margin-right: 20px;
+    max-width: 100%;
+    border: 5px solid #555;
+    }
+
+
+    @media (min-width: 575px) {
+        ZYZZ{
+          width: 550px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+
+      /* Image css block, inclduing shifting image to the right and adding a gray border around it*/
+    
+ 
+html{
+    background-color: red;
+    }
+
+    /* Add a black background color to the top navigation */
+.topnav {
+    background-color: black;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+#app{
+  position: absolute;
+  font-size: 40px;
+  top:  150px;
+
+}
+
+/* CSS for my my vue app*/
+
+p1{
+  position: absolute; 
+  font-size: 40px;
+  top: 100px;
+  left: 350px;
+  }
+
+  /* Alliging position of P1 and declaring fotn size  */
+
+
+#Temp{
+    position: absolute;
+    top: 550px;
+}
+
+#TickBox{
+  position: absolute;
+  font-weight: bold;
+  font-size: 40px;
+  left: 350px;
+  top: 170px;
+}
+
+
+/* Setting positiosn of vue component + font size and making it bold */
+

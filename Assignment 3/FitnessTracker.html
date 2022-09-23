@@ -1,0 +1,119 @@
+<html>
+<html lang = <"en"> 
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compataible" content "IE=edge" />
+        <script src="https://unpkg.com/vue@2.4.4/dist/vue.js"></script>
+        <link rel="StyleSheet" href="./home.css"/> 
+    </head> 
+<!-- Head Tag includes intital scale for diffrent devices-->
+<!-- Language UTF 8 , Java Script Vue Srouce, Style Sheet CSS Ref-->
+
+<title>
+    Fitness Tracker
+</title>
+<!-- Title of page-->
+
+<header> 
+    <div class="topnav">
+        <a class="active" href="FitnessTracker.html">Home</a>
+        <a href="BMICalculator.html">BMI Calculator</a>    
+        <a href="suprise.html">Suprise</a>
+        <a href="contact.html">Contact Page</a>
+    </div>
+</header>
+<!-- Header i stored the navigation bar-->
+
+<div>
+    <h2>Welcome!</h2>
+</div>
+
+    <p1>
+        Did you train today?
+    </p1>
+  
+<div id = "Temp"> 
+    <p3>
+         <a href="https://www.youtube.com/watch?v=U_uQb00LMgg"> Hardstyle Remix!</a>
+         <br>
+         <br>
+         <!-- Youtube link button to a hardstyle remix-->
+    </p3>
+        <button type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and Time.</button>
+        <p id="demo">
+        <!-- Button using JS to display live data and time-->
+</div>
+  
+
+<div id = "ZYZZ">
+    <img src="zyzz.jpeg" alt="ZYZZ" width="420" height="550">
+</div>
+<!-- Insert of my image-->
+
+<div id = "RandomQuote">
+    <p2> "What's your biggest fear?"
+        <br>
+        "Biggest fear?.. Dying Skinny" 
+        <br>
+        ~ John Skywalker  <!-- {{ RandomNbmr }} --> </p2>
+  <!--  <script src= "./project.js"></script> --> 
+
+<!-- Wanted to implenet a random quote API however i just put my own one-->
+</div>
+
+
+
+
+<body>
+
+
+ <div id = "app">
+        <p>User Name:</p>
+        <input 
+        v-model="name"      
+        type = "text"
+        placeholder="Please Enter Your Username" 
+        />
+        <p>Password:</p>
+        <input type="password" placeholder="Please Enter Your Password" /> 
+        <!-- Body Tag Vue App containing user login and password-->
+    </div>
+</body>
+
+<div id = "TickBox">
+    <input type = "checkbox" id="checkbox" v-models="checked" />
+    <label for ="checkbox">{{ checked }}</label>
+<!-- Vue Component Check Box to tick if you trained today -->
+</div>
+
+<script>    
+    var app = new Vue({
+            el: '#app',
+            data: {
+                message: "Hello Vue!",
+                name: 'Adam',
+            },
+        });
+</script>
+<!-- Vue app Hello Vue -->
+
+
+<script>    
+    var TickBox = new Vue({
+            el: '#TickBox',
+            data: {
+                message: "Hello Vue!",
+                checked: "Tick if yes",
+            
+            },
+        });
+</script>
+<!-- Vue Tick Box-->
+</html>
+
+
+
+

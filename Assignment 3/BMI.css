@@ -1,0 +1,65 @@
+  html{
+    background-color: red;
+    }
+
+  /* Sets html backgroudn color to red*/
+
+
+.topnav {
+    background-color: black;
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+/*Nav Bar CSS for coloring and styling */
+
+
+  h2 {
+    text-align: center;
+    border: 15px solid black;
+    font-size: 45px;
+    font-weight: bold;
+  }
+/* Header Styling includers border + font size and aliging text to centre */
+
+    #BMICalculator {
+    /* position: absolute;  */
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    top: 100px;
+    left: 0px;  
+
+  } 
+
+/*  Styling of my BMI calcultor Vue Componenet*/
+
+
+  #ComponentsWithVue {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 15px;
+    border-bottom: 8px dotted blue;
+
+  }
+
+
+  /* Added a bottem border of my vue global and local component text*/
